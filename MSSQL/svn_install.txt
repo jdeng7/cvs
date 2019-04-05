@@ -1,0 +1,75 @@
+yijun@yijun-Aspire-5732Z:~/Downloads$ sudo apt install subversion
+[sudo] password for yijun: 
+Sorry, try again.
+[sudo] password for yijun: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-43 linux-headers-4.15.0-43-generic
+  linux-image-4.15.0-43-generic linux-modules-4.15.0-43-generic
+  linux-modules-extra-4.15.0-43-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libserf-1-1 libsvn1
+Suggested packages:
+  db5.3-util libapache2-mod-svn subversion-tools
+The following NEW packages will be installed:
+  libserf-1-1 libsvn1 subversion
+0 upgraded, 3 newly installed, 0 to remove and 335 not upgraded.
+Need to get 2,061 kB of archives.
+After this operation, 9,380 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libserf-1-1 amd64 1.3.9-6 [44.4 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 libsvn1 amd64 1.9.7-4ubuntu1 [1,183 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu bionic/universe amd64 subversion amd64 1.9.7-4ubuntu1 [834 kB]
+Fetched 2,061 kB in 1s (1,560 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Selecting previously unselected package libserf-1-1:amd64.
+(Reading database ... 225799 files and directories currently installed.)
+Preparing to unpack .../libserf-1-1_1.3.9-6_amd64.deb ...
+Unpacking libserf-1-1:amd64 (1.3.9-6) ...
+Selecting previously unselected package libsvn1:amd64.
+Preparing to unpack .../libsvn1_1.9.7-4ubuntu1_amd64.deb ...
+Unpacking libsvn1:amd64 (1.9.7-4ubuntu1) ...
+Selecting previously unselected package subversion.
+Preparing to unpack .../subversion_1.9.7-4ubuntu1_amd64.deb ...
+Unpacking subversion (1.9.7-4ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libserf-1-1:amd64 (1.3.9-6) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up libsvn1:amd64 (1.9.7-4ubuntu1) ...
+Setting up subversion (1.9.7-4ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+
+
+yijun@yijun-Aspire-5732Z:~/Downloads$ svn --version
+svn, version 1.9.7 (r1800392)
+   compiled Mar 28 2018, 08:49:13 on x86_64-pc-linux-gnu
+
+Copyright (C) 2017 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.9 (compiled with 1.3.9)
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+The following authentication credential caches are available:
+
+* Plaintext cache in /home/yijun/.subversion
+* Gnome Keyring
+* GPG-Agent
+* KWallet (KDE)
+
